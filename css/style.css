@@ -1,0 +1,1297 @@
+/*colors used #af4401 #d0c950 #4f6f1d #142e18 #dedede #000 #343434*/ 
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+/*---start masthead---*/
+
+.background-shape {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.blackbar{
+	height: 4em;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	z-index: 111111;
+	transition: 0.3s ease-out;
+}
+
+#logologo {
+	transition: 0.3s ease-out;
+}
+
+.client-logo {
+	position: absolute;
+	top: 0.2em;
+	width: 100%;
+	text-align: center;
+}
+
+.blackbar h3{
+	font-family: 'harlow_solid_italicitalic';
+	color: #343434;
+	font-size: 1.1em;
+	text-shadow: 1px 1px #fff;
+	letter-spacing: 1px;
+	display: inline-block;
+	height: 40px;
+	padding: 0.7em 0 0 0;
+	/*--left padding at the margin of the leaf--*/
+	z-index: 22;
+	position: initial;
+}
+
+.blackbar h3:before {
+	content: url(../images/leaf.png);
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.corner-icon{
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	right:30px;
+	padding: 0;
+	margin: 0;
+}
+
+.corner-icon li{
+	display: inline-block;
+	padding: 0.7em 0 0 0;
+}
+
+.corner-icon i{
+	font-size: 1.3em;
+	color: #343434;
+	transition: 0.3s ease-out;
+}
+
+.menu-icon{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0.4em 0 0 1.5em;
+	padding-top: 0.3em; 
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.menu-icon:hover {
+	background-color: #d0c950;
+	border-radius: 5px;
+	border: 0.4px #dedede solid;
+}
+
+#menu-btn {
+	font-size: 1.8em;
+	color: #343434;
+	transition: 0.5s ease;
+}
+.rotate{
+	transform: rotate(-90deg);
+	z-index: 22222;
+	position: fixed;
+	margin: 0 !important;
+	padding-top: 0 !important;
+	top: 0 !important;
+	right: 20% !important;
+}
+
+#menu-btn:hover {
+	color: #fff;
+}
+
+nav ul{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	background: linear-gradient(90deg, rgba(208, 201, 80, 1) 80%, rgba(55, 55, 55, 0.9) 20%);
+	top: 0;
+	bottom: 0; 
+	padding-left: 30px;
+	margin: 0;
+	max-height: 0;
+	box-sizing: border-box;
+	border-bottom: 0.4px #dedede solid;
+	z-index: 55;
+	transition: left 0.6s;
+	-webkit-transition: max-height 0.6s;
+	-ms-transition: max-height 0.6s;
+	-moz-transition: max-height 0.6s;
+	-o-transition: max-height 0.6s;
+}
+.showing{
+	width: 100%;
+	max-height: 100%;
+}
+
+span{
+	display: none;
+}
+
+.navtop a{
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: 600;
+	padding: 1em 0 1em 0;
+	border-bottom: 1px #fff solid;
+	font-family: 'raleway', sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.8px;
+	color: #343434;
+}
+
+.navtop a:hover{
+	text-decoration: none;
+	color: #af4401;
+	border-bottom: 3px #fff solid;
+}
+
+	/*---Style for Shop Tea dropdown---*/
+.dropdown-menu{
+	border: none !important;
+	box-shadow: none;
+	padding-top: 1.5em !important;
+	background-color: #d0c950 !important;
+}
+
+.dropdown-item{
+	display: block !important;
+	font-size: 0.9em !important;
+	padding: 1em !important;
+	color: #343434 !important;
+	border-bottom: none !important;
+}
+
+.dropdown-item:hover {
+	background-color: rgba(255, 255, 255, 0) !important;
+	color: #555 !important;
+	border-bottom: none !important;
+}
+
+#giftsets {
+	color: #af4401 !important;
+}
+
+#ofseason {
+	font-weight: bold !important;
+}
+
+/*---Style for the masthead---*/
+.col-7,
+.col-5,
+.row {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.masthead {
+	width: 100%;
+	padding: 2.2em 0 0 0;
+	margin: 0;
+	clear: both;
+}
+
+#col-left {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 0 0 30px;
+	display: block;
+	position: relative;
+	z-index: 22;
+}
+
+#col-left h1{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 1.6em;
+	letter-spacing: 0.75px;
+	color: #af4401;
+	line-height: 1.5em;
+	display: block;
+	box-sizing: border-box;
+	padding: 1em 0 0 0;
+	text-shadow: 0.6px 0.6px #fff;
+}
+
+#col-left h3{
+	font-family: 'raleway', sans-serif;
+	font-size: 1em;
+	color: #343434;
+	font-weight: 600;
+	line-height: 1.5em;
+	letter-spacing: 0.8px;
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 2em;
+}
+
+.button {
+	border-radius: 3px;
+	border: 2px #fff solid;
+	width: 10em;
+	background-color: #d4ce5e;
+	text-align: center;
+	padding: 1em 0.5em 1em 0.5em;
+	box-shadow: 1px 1px 1px 1px rgba(192, 192, 192, 0.5);
+	transition: 0.1s ease;
+}
+
+.button a {
+	color: #af4401;
+	font-family: 'raleway', sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.button a:hover {
+	text-decoration: none;
+}
+
+#col-right {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	display: block;
+	position: relative;
+	right: 1%;
+	z-index: 11;
+}
+
+#col-right img {
+	width: 100%;
+	box-shadow: 10px 10px 10px #999;
+}
+
+/*---Style for the intro carousel---*/
+#carouselExampleSlidesOnly,
+.carousel-inner,
+.carousel-item {
+	height: 35.5em;
+	width: 100%;
+}
+/*---Set height rather than min- 
+for preventing changing height of 2 slides---*/
+.col-12, 
+.col-sm-6{
+	margin: 0;
+	padding: 0;
+}
+
+.our-tea {
+	width: 100%;
+	padding: 3.2em 0 2.2em 0;
+	margin: 0;
+}
+
+.our-tea h1{
+	display: block;
+	text-align: center;
+	font-family: 'Berkshire Swash', cursive;
+	text-shadow: 0.6px 0.6px #fff;
+	font-size: 1.6em;
+	width: 100%;
+	height: 3em;
+	color: #343434;
+}
+
+.our-tea h1:before {
+	content: url(../images/leaf.png);
+	font-size: 0;
+	line-height: 0;
+	z-index: -1;
+	position: relative;
+}
+
+#intro {
+	display: block;
+	text-align: center;
+	font-family: 'raleway', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	max-width: 35em;
+	margin: 0 auto;
+	line-height: 1.5em;
+	padding: 0 2em 3em 2em;
+	color: #343434;
+}
+
+.our-tea .row p{
+	display: block;
+	text-align: center;
+	font-family: 'lato', sans-serif;
+	font-size: 1em;
+	max-width: 35em;
+	margin: 0 auto;
+	line-height: 1.5em;
+	padding: 0 2em 3em 2em;
+	color: #000;	
+	font-weight: 500;
+} 
+
+.our-tea img{
+	box-shadow: 9px 9px 10px #999;
+}
+
+.our-tea h2{
+	display: block;
+	text-align: center;
+	font-family: 'raleway', sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #af4401;
+	width: 100%;
+	padding: 2em 0 1em 0;
+}
+
+.button-2 {
+	border-radius: 3px;
+	border: 1px #fff solid;
+	width: 16em;
+	background-color: #af4401;
+	text-align: center;
+	padding: 1em 0.5em 1em 0.5em;
+	margin: 0 auto;
+	box-shadow: 2px 2px 2px 2px #ddd;
+	transition: 0.1s ease;
+}
+
+.button-2 a {
+	color: #fff;
+	font-family: 'raleway', sans-serif;
+	font-size: 0.9em;
+}
+
+.button-2 a:hover {
+	text-decoration: none;
+	font-family: 'raleway', sans-serif;
+}
+
+/*---style for the 5 tea cards---*/
+.teaslider{
+	text-align: center;
+	padding: 2em 0 3em 0;
+	background: linear-gradient(0deg, rgba(222, 222, 222, 0.8)30%, rgba(255, 255, 255, 0.9)100%);
+}
+
+.teaslider h1{
+	display: block;
+	text-align: center;
+	font-family: 'Berkshire Swash', cursive;
+	text-shadow: 0.6px 0.6px #fff;
+	font-size: 1.6em;
+	width: 100%;
+	height: 3em;
+	color: #343434;
+}
+
+.teaslider h1:before {
+	content: url(../images/leaf.png);
+	font-size: 0;
+	line-height: 0;
+	z-index: 1;
+	position: relative;
+}
+
+.teaslider p{
+	display: block;
+	text-align: center;
+	font-family: 'raleway', sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.3px;
+	max-width: 35em;
+	margin: 0 auto;
+	line-height: 1.5em;
+	padding: 0 2em 2em 2em;
+	color: #343434;
+	font-weight: 600;
+}
+
+.learn-tea img{
+	width: 120px;
+	display: block;
+	padding: 0 auto;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 1px #dedede solid;
+}
+
+.myslide {
+	text-align: center;
+	border: 1px #dedede solid;
+	box-sizing: border-box;
+	padding: 2em 2em 2em 2em;
+	margin: 15px;
+	background-color: #fff;
+	height: 30em;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #dedede;
+}
+
+.myslide h3{
+	font-family: 'raleway', sans-serif;
+	font-size: 1.2em;
+	display: inline-block;
+	margin: 0;
+	padding: 1em 0 1em 0;
+	font-weight: 600;
+	color: #af4401;
+}
+
+.myslide ul {
+	font-family: 'lato', sans-serif;
+	font-size: 1em;
+	line-height: 2.2em;
+}
+
+/*--Style for the favorite tea for the season section--*/
+.favorite {
+	padding: 2em 0 2em 0;
+}
+
+.favorite h1{
+	display: block;
+	text-align: center;
+	font-family: 'Berkshire Swash', cursive;
+	text-shadow: 0.6px 0.6px #fff;
+	font-size: 1.6em;
+	width: 100%;
+	height: 3em;
+	color: #343434;
+}
+
+.favorite h1:before {
+	content: url(../images/leaf.png);
+	font-size: 0;
+	line-height: 0;
+	z-index: 1;
+	position: relative;
+}
+
+.favorite img {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.5em;
+	box-shadow: 5px 5px 5px #dedede;
+}
+
+.favorite .row .col-7{
+	padding: 0 2em 2em 2em;
+}
+
+.favorite .row h2 {
+	display: block;
+	font-family: 'raleway', sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #af4401;
+	width: 100%;
+	padding: 1em 0 1em 0;	
+}
+
+.favorite .row p{
+	display: block;
+	font-family: 'raleway', sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.3px;
+	max-width: 35em;
+	margin: 0 auto;
+	line-height: 1.5em;
+	padding: 0;
+	color: #343434;
+	font-weight: 600;
+} 
+
+.favorite .row ul {
+	font-family: 'lato', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	list-style: disc;
+	list-style-position: inside;
+}
+
+/*--style for the tea society banner--*/
+.col-12,
+.col-md-6 {
+	margin: 0;
+	padding: 0;
+}
+
+.tea-society img {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-shadow: 9px 9px 9px #ccc;
+	position: initial;
+	z-index: 33444;
+}
+
+.banner-half{
+	width: 100%;
+	height: 18em;
+	margin: 0;
+	padding: 2em;
+	background-color: #142e18;
+	position: initial;
+	z-index: 22;
+	box-shadow: 0 9px 9px #999;
+}
+
+.banner-half h1{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 1.6em;
+	letter-spacing: 0.75px;
+	color: #fff;
+	line-height: 1.5em;
+	display: block;
+}
+
+.banner-half p{
+	font-family: 'raleway', sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.75px;
+	color: #af4401;
+	line-height: 1.5em;
+	display: block;
+	font-weight: 600;
+	padding: 0 0 2em 0;
+}
+
+
+/*---style for the footer---*/
+.footer{
+	padding: 2em;
+	background: linear-gradient(0deg, rgba(222, 222, 222, 0.8)30%, rgba(255, 255, 255, 0.9)100%);
+}
+
+.col-xs-12, 
+.col-xs-0, 
+.col-sm-6,
+.col-md-2, 
+.col-md-3,
+.col-md-4{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.logo {
+	width: 100%;
+	display: block;
+	padding: 2em 0 2em 0; 
+}
+
+.logo h3{
+	font-family: 'harlow_solid_italicitalic';
+	text-shadow: 1px 1px #fff;
+	color: #343434;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	display: inline-block;
+	height: 3em;
+	padding: 0.7em 0 0 0;
+	background-image: url(../images/leaf.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: initial;
+}
+
+
+#firstcol h3,
+#midcol h3,
+#lastcol h3{
+	display: block;
+	font-family: 'raleway', sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #af4401;
+	width: 100%;
+	padding: 2em 0 1em 0;
+	text-shadow: 0.6px 0.6px #fff;
+}
+
+#firstcol p,
+#midcol p,
+#lastcol ul{
+	display: block;
+	font-family: 'lato', sans-serif;
+	font-size: 0.9em;
+	color: #343434;
+	width: 100%;
+	line-height: 1.5em;
+}
+
+#lastcol a{
+	color: #af4401;
+}
+
+.social-media{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding-top: 1em;
+}
+
+.social-media a{
+	display: inline;
+	padding-right: 10px;
+}
+
+.social-media i{
+	font-size: 3em;
+	color: #343434;
+	text-shadow: 1px 1px #fff;
+}
+
+.social-media i:hover {
+	font-size: 3em;
+	color: #222;
+}
+
+.nav-bottom{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	box-sizing: border-box;
+	color: #343434;
+	font-family: 'lato', sans-serif;
+	font-size: 0.9em;
+}
+
+@media only screen and (min-width: 576px){
+	.blackbar{
+		position: sticky;
+		top: 0;
+	}
+
+	.menu-icon{
+		display: none;
+	}
+
+	nav ul{
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		position: initial;
+		background: none;
+		padding-left: 0;
+		margin: 0;
+		max-height: 5em;
+		box-sizing: border-box;
+		border-bottom: none;
+	}
+
+	.navtop {
+		position: initial;
+		text-align: center;
+	}
+
+	.navtop ul li{
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+
+	.navtop a{
+		text-transform: none;
+		display: inline-block;
+		font-weight: 600;
+		padding: 2.5em 1em 2em 1em;
+		border-bottom: none;
+		font-family: 'raleway', sans-serif;
+		font-size: 0.9em;
+		letter-spacing: 0.8px;
+		color: #343434;
+	}
+
+	.navtop span{
+		display: initial;
+	}
+
+	.navtop a:hover {
+		text-decoration: none;
+		color: #af4401;
+		border-bottom: none;
+	}
+
+	/*---Style for Shop Tea dropdown---*/
+	.dropdown-menu{
+		position: absolute !important;
+		text-align: left !important;
+		border: none !important;
+		box-shadow: 1px 1px #dedede;
+		padding-top: 0.5em !important;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.3)10%, rgba(255, 255, 255, 1)100%) !important;
+	}
+
+	.dropdown-item{
+		display: inline-block !important;
+		font-size: 0.9em !important;
+		padding: 1em !important;
+		color: #555 !important;
+	}
+
+	#giftsets {
+		color: #af4401 !important;
+	}
+
+	#ofseason {
+		font-weight: bold !important;
+	}
+
+	.dropdown-item:hover {
+		background-color: rgba(255, 255, 255, 0) !important;
+		color: #343434 !important;
+	}
+
+	#col-left {
+		padding: 0 0 0 35px;
+	}
+		
+	#col-left h1{
+		font-size: 2em;
+		letter-spacing: 0.85px;
+		padding: 1em 0 0 0;
+	}
+
+	#col-left h3{
+		font-size: 1em;
+		margin-bottom: 2em;
+	}
+
+	.button a {
+		font-size: 1em;
+	}
+
+	#col-right {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0;
+		display: block;
+		position: relative;
+		right: 1%;
+		z-index: 11;
+	}
+
+	#col-right img {
+		width: 95%;
+		box-shadow: 10px 10px 10px #999;
+	}
+
+	/*--Style for the Our Tea slides--*/
+
+	#carouselExampleSlidesOnly,
+	.carousel-inner,
+	.carousel-item {
+		height: 20em;
+		width: 100%;
+	}
+	/*---Set height rather than min- 
+	for preventing changing height of 2 slides---*/
+
+	.our-tea {
+		width: 100%;
+		padding: 3.2em 0 2.2em 0;
+		margin: 0 auto;
+	}
+
+	.our-tea img{
+		width: 90% !important;
+		margin: 0 auto!important;
+		padding: 0 !important;
+		display: block !important;
+		box-shadow: 9px 9px 15px #999 !important;
+	}
+
+	.our-tea h1{
+		font-size: 2em;
+		height: 3em;
+	}
+
+	#intro {
+		font-size: 1em;
+		line-height: 1.8em;
+		letter-spacing: 0.3px;
+		padding: 0 2em 3em 2em;
+	}
+
+	.our-tea .row p{
+		display: block;
+		font-size: 1em;
+		max-width: 25em;
+		margin: 0;
+		padding: 0 1em 3em 1em;
+		text-align: left;
+	} 
+
+	.our-tea h2{
+		display: block;
+		text-align: left;
+		font-size: 1.3em;
+		padding: 0 1em 2em 1em;
+		line-height: 1.6em;
+	}
+
+	.button-2 {
+		width: 16em;
+		padding: 1em 0.5em 1em 0.5em;
+	}
+
+	.button-2 a {
+		font-size: 1em;
+	}
+
+	/*---Style for 5 tea cards---*/
+
+	.myslide {
+		padding: 2em 2em 2em 2em;
+		margin: 10px;
+		height: 37em;
+	}
+
+	.teaslider h1{
+		font-size: 2em;
+	}
+
+	.myslide h3{
+		font-family: 'raleway', sans-serif;
+		font-size: 1.3em;
+	}
+
+
+	/*---Style for the season's favorite---*/
+
+	.favorite {
+		padding: 2em 0 2em 0;
+	}
+
+	.favorite h1{
+		font-size: 2em;
+	}
+
+	.favorite img {
+		width: 90%;
+		padding: 0.5em;
+		margin: 0 auto;
+		margin-top: 2em;
+	}
+
+	.favorite .row .col-7{
+		padding: 0 2em 2em 2em;
+	}
+
+	.favorite .row h2 {
+		font-size: 1.3em;
+		padding: 1em 0 1em 0;	
+	}
+
+	/*---Style for the banner---*/
+	.banner-half h1{
+		font-size: 2em;
+	}
+
+	.banner-half p{
+		font-size: 1.1em;
+	}
+
+	.tea-society img {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+		box-shadow: 9px 9px 9px #ccc;
+		position: initial;
+		z-index: 33444;
+	}
+
+	.banner-half{
+		width: 100%;
+		height: 20em;
+		margin: 0;
+		padding: 2em;
+		background-color: #142e18;
+		position: initial;
+		z-index: 22;
+		box-shadow: 0 9px 9px #999;
+	}
+
+	/*---Style for the footer---*/
+
+}
+
+@media only screen and (min-width: 768px){
+
+	.navtop a{
+		padding: 2.5em 1em 2em 1.5em;
+	}
+
+	.background-shape {
+		position: absolute;
+		top: -10em;
+	}
+
+	/*---Style for Shop Tea dropdown---*/
+
+
+	#col-left {
+		padding: 0 0 0 35px;
+	}
+		
+	#col-left h1{
+		font-size: 2.1em;
+	}
+
+	#col-left h3{
+		font-size: 1.1em;
+		margin-bottom: 2em;
+	}
+
+	.button a {
+		font-size: 1.1em;
+	}
+
+	#col-right {
+		position: relative;
+		right: initial;
+	}
+
+	#col-right img {
+		width: 78%;
+		box-shadow: 18px 18px 15px #999;
+		margin: 0 auto;
+	}
+
+	/*--Style for the Our Tea slides--*/
+
+	#carouselExampleSlidesOnly,
+	.carousel-inner,
+	.carousel-item {
+		height: 20em;
+		width: 100%;
+	}
+	/*---Set height rather than min- 
+	for preventing changing height of 2 slides---*/
+
+	.our-tea {
+		width: 100%;
+		padding: 3.2em 0 2.2em 0;
+		margin: 0 auto;
+	}
+
+	.our-tea img{
+		width: 90% !important;
+		margin: 0 auto!important;
+		padding: 0 !important;
+		display: block !important;
+		box-shadow: 9px 9px 15px #999 !important;
+	}
+
+	.our-tea h1{
+		font-size: 2.1em;
+		height: 3em;
+	}
+
+	#intro {
+		font-size: 1.1em;
+	}
+
+	.our-tea .row p{
+		font-size: 1em;
+		max-width: 25em;
+		padding: 0 1em 3em 1em;
+	} 
+
+	.our-tea h2{
+		font-size: 1.4em;
+	}
+
+	.button-2 a {
+		font-size: 1.1em;
+	}
+
+	/*---Style for 5 tea cards---*/
+	.teaslider p{
+		font-size: 1.1em;
+	}
+
+	.myslide {
+		padding: 2em 2em 2em 2em;
+		margin: 8px;
+		height: 38em;
+	}
+
+	.teaslider h1{
+		font-size: 2.1em;
+	}
+
+	.myslide h3{
+		font-size: 1.4em;
+	}
+
+
+	/*---Style for the season's favorite---*/
+
+	.favorite {
+		padding: 2em 0 2em 0;
+	}
+
+	.favorite h1{
+		font-size: 2.1em;
+	}
+
+	.favorite img {
+		width: 70%;
+		margin-top: 2em;
+	}
+
+	.favorite .row .col-7{
+		padding: 0 3em 2em 2em;
+	}
+
+	.favorite .row h2 {
+		font-size: 1.4em;
+		padding: 1em 0 1em 0;	
+	}
+
+	/*---Style for the banner---*/
+	.banner-half h1{
+		font-size: 2.1em;
+	}
+
+	.banner-half p{
+		font-size: 1.1em;
+	}	
+
+	.tea-society {
+		display: block;
+		width: 100%;
+		box-shadow: 0 9px 9px #999;
+	}
+
+	.tea-society img {
+		height: 23em;
+		width: auto;
+		box-shadow: none;
+		position: initial;
+		z-index: 33;
+	}
+
+	.banner-half{
+		width: 100%;
+		height: 23em;
+		margin: 0;
+		position: initial;
+		z-index: 22;
+		box-shadow: none;
+	}
+
+	#firstcol,
+	#midcol,
+	#lastcol{
+		padding-right: 2em;
+	}
+
+
+}
+
+@media only screen and (min-width: 992px){
+	.background-shape {
+		position: absolute;
+		top: -19em;
+	}
+
+	#col-left {
+		padding: 0 0 0 10%;
+	}
+		
+	#col-left h1{
+		font-size: 2.5em;
+	}
+
+	#col-left h3{
+		font-size: 1.1em;
+		margin-bottom: 2em;
+	}
+
+	#col-right {
+		position: relative;
+		right: initial;
+		left: 2%;
+	}
+
+	#col-right img {
+		width: 75%;
+	}
+
+	/*--Style for the Our Tea slides--*/
+
+	#carouselExampleSlidesOnly,
+	.carousel-inner,
+	.carousel-item {
+		height: 20em;
+		width: 100%;
+	}
+	/*---Set height rather than min- 
+	for preventing changing height of 2 slides---*/
+
+	.our-tea {
+		width: 100%;
+		padding: 3.2em 0 2.2em 0;
+		margin: 0 auto;
+	}
+
+	.our-tea img{
+		width: 70% !important;
+		margin-right: 0 !important;
+		padding: 0 !important;
+		display: block !important;
+		box-shadow: 9px 9px 15px #999 !important;
+	}
+
+	.our-tea h1{
+		font-size: 2.2em;
+		height: 3em;
+	}
+
+	.our-tea .row p{
+		max-width: 25em;
+		padding: 0 1em 3em 3em;
+	} 
+
+	.our-tea h2{
+		font-size: 1.4em;
+		padding-left: 2em;
+	}
+
+	/*---Style for 5 tea cards---*/
+	.myslide {
+		padding: 2em 1em 2em 1em;
+		margin: 5px;
+		height: 38em;
+	}
+
+	.teaslider h1{
+		font-size: 2.2em;
+	}
+
+
+	/*---Style for the season's favorite---*/
+
+	.favorite {
+		padding: 2em 0 2em 0;
+	}
+
+	.favorite h1{
+		font-size: 2.2em;
+	}
+
+	.favorite img {
+		width: 60%;
+		margin-top: 1.2em;
+		margin-right: 1em;
+	}
+
+	.favorite .row .col-7{
+		padding: 0 3em 2em 2em;
+		max-width: 32em;
+	}
+
+	/*---Style for the banner---*/
+	.banner-half h1{
+		font-size: 2.4em;
+	}
+
+	.banner-half p{
+		font-size: 1.2em;
+	}	
+	
+
+}
+
+@media only screen and (min-width: 1200px){
+	.background-shape {
+		position: absolute;
+		top: -25em;
+	}
+
+	#col-right {
+		position: relative;
+		right: initial;
+		left: 1%;
+	}
+
+	#col-right img {
+		width: 70%;
+	}
+
+	/*--Style for the Our Tea slides--*/
+
+	#carouselExampleSlidesOnly,
+	.carousel-inner,
+	.carousel-item {
+		height: 20em;
+	}
+	/*---Set height rather than min- 
+	for preventing changing height of 2 slides---*/
+
+	.our-tea img{
+		width: 63% !important;
+	}
+
+	/*---Style for 5 tea cards---*/
+	.myslide {
+		height: 36em;
+	}
+
+	/*---Style for the season's favorite---*/
+
+	.favorite img {
+		width: 50%;
+		margin-top: 1em;
+		margin-right: 0;
+	}
+
+	.favorite .row .col-7{
+		padding: 0 3em 2em 5em;
+		max-width: 32em;
+	}
+
+	/*---Style for the banner---*/
+	.tea-society{
+		background-color: #142e18;
+	}
+
+
+	.banner-half h1{
+		font-size: 2.5em;
+	}
+
+	.banner-half p{
+		font-size: 1.2em;
+	}	
+}
