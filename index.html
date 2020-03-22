@@ -5,10 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="loose tea, chubby cat tea, organic, hand-picked tea">
 	<meta name="author" content="Yifan Wang">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lato|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caudex:400,700|Quattrocento+Sans:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -18,275 +17,345 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>	
-	<div class="background-shape">
-		<svg id="svg-polygon" viewBox="0 0 1000 1500" width="100%" height="100%">
-			<defs>
-				<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">  
-				    <stop offset="30%" stop-color="#fff" stop-opacity="1" />
-				    <stop offset="100%" stop-color="#dedede" stop-opacity="1" />
-				</linearGradient>
-			</defs>
-			<polygon points="0 980,1000 800,1000 0,0 0" mask="url(#gradient-mask)" fill="url(#gradient)"></polygon>
-		</svg>
-	</div>
+<body class="bg-bg">	
+	<div class="border-wrap">
 
-	<div class="blackbar"> 
-		<div class="client-logo">
-			<a href="#"><h3 id="logologo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chubby Cat Tea Co.</h3></a>
+		<div class="mobile-logo">
+			<img src="images/brand-logo.png" id="logologo">
 		</div>
-		<div class="corner-icon">
-			<ul>
-				<li><a href="#" onclick="method(event)"><i class="fa fa-shopping-bag"></i></a></li>
+
+		<div id="nav-icon3">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+
+		<nav >
+			<ul class="navtop">
+				<li></li>
+				<li><a href="#" onclick="method(event)">SHOP TEA</a></li>
+				<li><a href="#" onclick="method(event)" id="color">ABOUT</a></span></li>
+				<li class="client-logo">
+					<a href="#">
+						<img src="images/brand-logo.png" id="logologo">
+					</a>
+				</li>
+				<li><a href="#" onclick="method(event)">TEAWARE</a></li>
+				<li><a href="#" onclick="method(event)">CONTACT US</a></li>
+				<li></li>
 			</ul>
-		</div>
-	</div>
+		</nav>
 
-	<div class="menu-icon" onclick="myFunction()">
-		<i id="menu-btn" class="fa fa-bars"></i>
-	</div>
+	
+		<div class="masthead">
+			<div class="row">
+				<div class="col-md-6 col-12" id="col-left">
+					<h1>Organic, hand-picked loose tea, imported purely from nature</h1>
+					<h3>Visit our store and get your tea sample for free today!</h3>
+				</div>
+				<div class="col-md-6  col-12" id="col-right">
+					<img src="images/tea-ceremony.jpg" style="clip-path: url(#myClip);">
 
-	<nav class="navtop">
-		<ul>
-			<li><a href="#" onclick="method(event)">Home</a><span>&nbsp;&nbsp;&nbsp;|</span></li>
-			<li><a href="#" onclick="method(event)">About us</a><span>&nbsp;&nbsp;&nbsp;|</span></li>
-			<li><a href="#" onclick="method(event)">Features</a><span>&nbsp;&nbsp;&nbsp;|</span></li>
-			<li>
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="method(event)">Shop tea</a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			        <a class="dropdown-item" href="#" onclick="method(event)">Green tea</a>
-			        <a class="dropdown-item" href="#" onclick="method(event)">Black tea</a>
-			        <a class="dropdown-item" href="#" onclick="method(event)">White tea</a>
-			        <a class="dropdown-item" href="#" onclick="method(event)">Oolong</a>
-			        <a class="dropdown-item" href="#" onclick="method(event)">Pu'erh</a>
-			        <div class="dropdown-divider"></div>
-			        <a class="dropdown-item" href="#" id="giftsets" onclick="method(event)">Gift sets</a>
-			        <a class="dropdown-item" href="#" id="ofseason" onclick="method(event)">Tea of the season</a>
-		        </div>
-			</li>
-			<li><a href="#" onclick="method(event)">Blogs</a><span>&nbsp;&nbsp;&nbsp;</span></li>
-			<li><br></li>
-		</ul>
-	</nav>
-
-	<div class="masthead">
-		<div class="row">
-			<div class="col-6" id="col-left">
-				<h1>Organic, hand-picked loose tea, imported purely from nature</h1>
-				<h3>Visit our store and get your tea sample for free today!</h3>
-				<article class="button">
-					<a href="#" onmouseover="buttonFunction(this)" onmouseleave="buttonNormal(this)" onmousedown="clickFunction(this)" onmouseup="upFunction(this)" onclick="method(event)">Show details</a>
-				</article>
-			</div>
-			<div class="col-6" id="col-right">
-				<img src="images/spoon-tea.jpg">
-			</div>
-		</div>
-	</div>
-
-	<div class="our-tea">
-		<h1>Welcome, tea lover!</h1>
-		<p id="intro">We let Nature speak for itself. Our hand-picked premium organic teas will be your best choice for every occasion. </p>
-		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-		    <div class="carousel-inner">
-		        <div class="carousel-item active">
-		        	<div class="row">
-		        		<div class="col-12 col-sm-6">
-		        			 <img class="d-block w-100" src="images/tea-hand.jpg" alt="First slide">
-		        		</div>
-		        		<div class="col-12 col-sm-6">
-			        		<h2>Organic, hand-picked from nature</h2>
-							<p>In order to bring you the most natrual flavor, we use the finest whole-leaf organic teas. Each leaf is hand-picked on family farms and processed using only traditional methods.</p>	
-		        		</div>
-		        	</div>
-		        </div>
-		        <div class="carousel-item">
-		        	<div class="row">
-		        		<div class="col-12 col-sm-6">
-		        			 <img class="d-block w-100" src="images/tea-mountain.jpg" alt="Second slide">
-		        		</div>
-		        		<div class="col-12 col-sm-6">
-			        		<h2>High mountain tea, free from pollution</h2>
-							<p>We source our tea directly from sustainable family-owned tea farms. All tea is tested and verified to be 100% chemical and pesticide free. Growing in high elevation and surrounded by beautiful clouds, our tea comes from the most ideal environment. </p>
-		        		</div>
-		        	</div>
-		        </div>
+					<div class="svg-wrap" >
+						<svg height="0" width="0"  viewBox="0 0 285.84 284.73">
+							<defs>
+								<clipPath id="myClip" clipPathUnits="objectBoundingBox" transform="scale(0.0034984 0.003512)">
+									<path class="cls-1" d="M142.22.42c66,4,90.31,16.41,116.6,70.34,9.27,19,28.9,62.79,26.88,85.36-4.2,47-14.93,67.83-59.86,101.39-15,11.2-32.2,26.52-83.62,27.19-53.61.7-99.8-10.59-118.16-62.09C8.49,178.92,1,169.05.07,142.56c-1.27-38,13.85-42,35.85-91.51C56.3,5.21,101.85-2,142.22.42Z"/>
+								</clipPath>
+							</defs>
+						</svg>				
+					</div>
+			    </div>
 		    </div>
-		</div>
-		<article class="button-2">
-			<a href="#" onmouseover="buttonFunct(this)" onmouseleave="buttonNorm(this)" onmousedown="clickFunct(this)" onmouseup="upFunct(this)" onclick="method(event)">Learn more</a>
-		</article>
-	</div>
-
-	<div class="teaslider">
-		<h1>Learn about your cup of tea</h1>
-		<p>Every type of tea has its unique flavor and aroma, because they grow in distinct environment and are processed by using different methods.</p>
-		<div class="learn-tea">
-			<div class="myslide">
-				<div class="oolong">
-					<img src="images/oolong.png">
-					<h3>Oolong</h3>
-					<ul>
-						<li><b>Fermentation</b><br>Semi-fermented</li>
-						<li><b>Growing Regions</b><br>Fujian, Guangdong, Taiwan</li>
-						<li><b>Best Seasons To Purchase</b><br>Spring and Autumn</li>
-					</ul>
-				</div>
-			</div>
-			<div class="myslide">
-				<div class="puerh">
-					<img src="images/pu-erh.png">
-					<h3>Pu-erh</h3>
-					<ul>
-						<li><b>Fermentation</b><br>Post-fermentation from aging</li>
-						<li><b>Growing Regions</b><br>Yun'nan </li>
-						<li><b>Best Seasons To Purchase</b><br>Spring, Summer, Autumn</li>
-					</ul>
-				</div>
-			</div>
-			<div class="myslide">
-				<div class="green-tea">
-					<img src="images/green-tea.png">
-					<h3>Green Tea</h3>
-					<ul>
-						<li><b>Fermentation</b><br>Non-fermented</li>
-						<li><b>Growing Regions</b><br>Zhejiang, Anhui, Jiangxi, Jiangsu, Szechuan, Hunan, Hubei , Guangxi, Fujian, Guizhou </li>
-						<li><b>Best Seasons To Purchase</b><br>Spring and Autumn</li>
-					</ul>
-				</div>
-			</div>
-			<div class="myslide">
-				<div class="white-tea">
-					<img src="images/white-tea.png">
-					<h3>White Tea</h3>
-					<ul>
-						<li><b>Fermentation</b><br>Lightly fermented</li>
-						<li><b>Growing Regions</b><br>Fujian, Jejien</li>
-						<li><b>Best Seasons To Purchase</b><br>Spring and Summer</li>
-					</ul>
-				</div>
-			</div>
-			<div class="myslide">
-				<div class="black-tea">
-					<img src="images/black-tea.png">
-					<h3>Black Tea</h3>
-					<ul>
-						<li><b>Fermentation</b><br>Light to strong fermentation</li>
-						<li><b>Growing Regions</b><br>Szechuan, Yunnan, Fujian, Guangdong</li>
-						<li><b>Best Seasons To Purchase</b><br>Spring and Autumn</li>
-					</ul>
-				</div>
-			</div>	
-		</div>
-		<article class="button-2">
-			<a href="#" onclick="method(event)" onmouseover="buttonFunct(this)" onmouseleave="buttonNorm(this)" onmousedown="clickFunct(this)" onmouseup="upFunct(this)">Show our collections</a>
-		</article>
-	</div>
-
-	<div class="favorite">
-		<h1>Favorite in the season</h1>
-		<div class="row">
-			<div class="col-5">
-				<img src="images/tea-product.jpg">
-			</div>
-			<div class="col-7">
-				<h2>Yun'nan Pu'erh</h2>
-				<p>Our fully fermented Pu'erh tea has a smooth earthy flavor with a subtle hint of smoky aroma.</p>
-				<div class="benefits">
-					<h2>Significant benefits</h2>
-					<ul>
-						<li>Enhance metabolism to aid weight loss;</li>
-						<li>Rich in antioxidants to help slowing oxidation;</li>
-						<li>Help digestion and breaking down fatty acids</li>
-					</ul>
-				</div>
-				<div class="details">
-					<h2>Details</h2>
-					<ul>
-						<li><b>Type:</b> Black tea</li>
-						<li><b>Region:</b> Yun'nan, China</li>
-						<li><b>Harvest year:</b> 2012</li>
-						<li><b>Infusion time:</b> 5 min</li>
-					</ul>
-				</div>
+		    <div class="cloud-left cloud-one fadeup">
+				<img src="images/cloud-left.png">
 			</div>
 		</div>
-		<article class="button-2">
-			<a href="#" onclick="method(event)" onmouseover="buttonFunct(this)" onmouseleave="buttonNorm(this)" onmousedown="clickFunct(this)" onmouseup="upFunct(this)">Shop our tea</a>
-		</article>
-	</div>
 
-	<div class="tea-society">
-		<div class="row">
-			<div class="col-12 col-md-6">
-				<img src="images/tea-pot.jpg">
+		<div>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+		</div>
+
+		<div class="our-tea">
+			<h1 class="fadein">Welcome, tea lover!</h1>
+			<h3 class="fadein">We let Nature speak for itself. Our hand-picked premium organic teas will be your best choice for every occasion. </h3>
+			<div id="carouselExampleSlidesOnly" class="carousel slide p-4 fadeup" data-ride="carousel">
+				<ol class="carousel-indicators">
+				    <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
+				  </ol>
+			    <div class="carousel-inner">
+			        <div class="carousel-item active">
+			        	<div class="row">
+			        		<div class="col-12 col-md-6">
+			        			 <img src="images/hand-tea-fresh.jpg" alt="First slide">
+			        		</div>
+			        		<div class="col-12 col-md-6 p-5">
+				        		<h2>Organic, hand-picked from nature</h2>
+								<p>In order to bring you the most natrual flavor, we use the finest whole-leaf organic teas. Each leaf is hand-picked on family farms and processed using only traditional methods.</p>	
+			        		</div>
+			        	</div>
+			        </div>
+			        <div class="carousel-item">
+			        	<div class="row">
+			        		<div class="col-12 col-md-6">
+			        			 <img src="images/green-plantation.jpg" alt="Second slide">
+			        		</div>
+			        		<div class="col-12 col-md-6 p-5">
+				        		<h2>High mountain tea, free from pollution</h2>
+								<p>We source our tea directly from sustainable family-owned tea farms. All tea is tested and verified to be 100% chemical and pesticide free. Growing in high elevation and surrounded by beautiful clouds, our tea comes from the most ideal environment. </p>
+			        		</div>
+			        	</div>
+			        </div>
+			        <div class="carousel-item">
+			        	<div class="row">
+			        		<div class="col-12 col-md-6">
+			        			 <img src="images/tea-cup.jpg" alt="Second slide">
+			        		</div>
+			        		<div class="col-12 col-md-6 p-5">
+				        		<h2>Traditional way to bring out the aroma</h2>
+								<p> We pride ourselves for using the traditional method to cook and bring out the aroma of tea leves. An intensive care is given to hand-picked and hand-processed quality tea, so our tea has both the sweetness and complexity. </p>
+			        		</div>
+			        	</div>
+			        </div>
+			    </div>
 			</div>
-			<div class="col-12 col-md-6">
-				<div class="banner-half">
-					<h1>Brewing tea is a pure joy.</h1>
-					<p>Sign up to join our tea society; meet other tea lovers like you!</p>
-					<article class="button">
-						<a href="#" onclick="method(event)" onmouseover="buttonFunction(this)" onmouseleave="buttonNormal(this)" onmousedown="clickFunction(this)" onmouseup="upFunction(this)">Show details</a>
-					</article>
-				</div>
+			<div class="cloud-right cloud-two fadeup">
+				<img src="images/cloud-right.png">
 			</div>
 		</div>
-	</div>
 
-	<div class="footer">
-		<div class="row">
-			<div class="col-xs-0 col-sm-6 col-md-3" id="footer-logo">
-				<div class="logo">
-					<a href="#"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chubby Cat Tea Co.</h3></a>
-					<div class="social-media">
-						<a href="#" onclick="method(event)"><i class="fa fa-facebook-official"></i></a>
-						<a href="#" onclick="method(event)"><i class="fa fa-google-plus-square"></i></a>
-						<a href="#" onclick="method(event)"><i class="fa fa-instagram"></i></a>
+		
+
+		<div class="teaslider">
+			<h1 class="fadein">Learn about your cup of tea</h1>
+			<h3 class="fadein">Every type of tea has its unique flavor and aroma, because they grow in distinct environment and are processed by using different methods.</h3>
+			<div class="learn-tea fadeup" id="accordion">
+				<div class="row"> 
+				    <div class="col-md-2 col-12">
+				    	<a class="tea-cup" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+						<img src="images/earle.png">
+						 </a>
+					</div>
+				 
+				    <div class="col-md-2 col-12">
+				    	 <a class="tea-cup" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+						<img src="images/black.png">
+						</a>
+					</div>				  
+				  
+				    <div class="col-md-2 col-12">
+				    	<a class="tea-cup" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+						<img src="images/oolong.png">
+						 </a>
+					</div>				 
+				  
+				    <div class="col-md-2 col-12">
+				    	<a class="tea-cup" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+						<img src="images/green.png">
+						</a>
+					</div>				  
+				 
+				    <div class="col-md-2 col-12">
+				    	 <a class="tea-cup" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+						<img src="images/white.png">
+						</a>
+					</div>
+				</div>
+
+				<div class="row" id="intro-box">		
+					<div class="collapse" id="collapseExample1" data-parent="#accordion">
+					  <div class="tea-intro" id="intro">
+					  	<div class="details">
+							<h2>Oolong</h2>
+							<ul>
+								<li><b>Fermentation</b><br> Semi-fermented</li>
+								<li><b>Growing Regions</b><br>Fujian, Guangdong, Taiwan</li>
+								<li><b>Best Seasons To Purchase</b><br>Spring and Autumn</li>
+							</ul>
+						</div>				
+					  </div>
+					</div>
+					<div class="collapse" id="collapseExample2" data-parent="#accordion">
+					  <div class="tea-intro">
+					  	<div class="details">
+							<h2>Pu-erh</h2>
+							<ul>
+								<li><b>Fermentation</b><br>Post-fermentation from aging</li>
+								<li><b>Growing Regions</b><br>Yun'nan</li>
+								<li><b>Best Seasons To Purchase</b><br>Spring, Summer, Autumn</li>
+							</ul>
+						</div>	
+					  </div>
+					</div>
+					<div class="collapse" id="collapseExample3" data-parent="#accordion">
+					  <div class="tea-intro">
+					  	<div class="details">
+							<h2>Green Tea</h2>
+							<ul>
+								<li><b>Fermentation</b><br>Non-fermented</li>
+								<li><b>Growing Regions</b><br>Zhejiang, Anhui, Jiangxi</li>
+								<li><b>Best Seasons To Purchase</b><br>Spring and Autumn</li>
+							</ul>
+						</div>	
+					  </div>
+					</div>
+					<div class="collapse" id="collapseExample4" data-parent="#accordion">
+					  <div class="tea-intro">
+					  	<div class="details">
+							<h2>White Tea</h2>
+							<ul>
+								<li><b>Fermentation</b><br>Lightly fermented</li>
+								<li><b>Growing Regions</b><br>Fujian, Jejien</li>
+								<li><b>Best Seasons To Purchase</b><br>Spring and Summer</li>
+							</ul>
+						</div>	
+					  </div>
+					</div>
+					<div class="collapse" id="collapseExample5" data-parent="#accordion">
+					  <div class="tea-intro">
+					  	<div class="details">
+							<h2>Black Tea</h2>
+							<ul>
+								<li><b>Fermentation</b><br>Light to strong fermentation</li>
+								<li><b>Growing Regions</b><br>Light to strong fermentation</li>
+								<li><b>Best Seasons To Purchase</b><br>Spring and Autumn</li>
+							</ul>
+						</div>
+					  </div>
+					</div>	
+
+				</div>
+			</div>
+			 <div class="cloud-left cloud-three fadeup">
+				<img src="images/cloud-left.png">
+			</div>
+		</div>
+
+		<div>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+		</div>
+
+
+		<div class="favorite">
+			<h1  class="fadein">Favorite in the season</h1>
+			<div class="row">
+				<div class="col-md-4 col-12">
+					<img src="images/tin-mock.png" id="mock-up">
+				</div>
+				<div class="col-md-8 col-12 fadeup">
+					<h2>Yun'nan Pu'erh</h2>
+					<p>Our fully fermented Pu'erh tea has a smooth earthy flavor with a subtle hint of smoky aroma. Dried in the sun and aged them loose, our Pu'erh has an incredibly delicious and clean flavor.</p>
+					<div class="benefits">
+						<h2>Significant benefits</h2>
+						<ul>
+							<li><span><img src="images/leaf-icon.png"></span>Enhance metabolism to aid weight loss;</li>
+							<li><span><img src="images/leaf-icon.png"></span>Rich in antioxidants to help slowing oxidation;</li>
+							<li><span><img src="images/leaf-icon.png"></span>Help digestion and breaking down fatty acids</li>
+						</ul>
+					</div>
+					<div class="details">
+						<h2>Details</h2>
+						<ul>
+							<li><b>Type:</b><br> Black tea</li>
+							<li><b>Region:</b><br> Yun'nan, China</li>
+							<li><b>Harvest year:</b><br> 2012</li>
+							<li><b>Infusion time:</b><br> 5 min</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3" id="firstcol">
-				<h3>About us</h3>
-				<p>Chubby Cat Tea Co., is a tea company selling classic tea and dedicating in the promotion of traditional brewing methods. We believe that tea is not just a kind of beverage but also a culture.</p>
-				
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-3" id="midcol">
-				<h3>Address</h3>
-				<p>1385 Woodoffe Ave <br>+1 (613)-123-1234</p>
-				<h3>Opening hours</h3>
-				<p>Wednesday 07:00-21:30<br>Thursday 07:00-21:30<br>Friday 07:00-22:00<br>Saturday 08:00-21:30<br>Sunday 08:00-17:00</p>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-3" id="lastcol">
-				<h3>Shop online</h3>
-				<ul>
-					<li><a href="#" onclick="method(event)">Pre-packed loose tea</a></li>
-					<li><a href="#" onclick="method(event)">Gift sets</a></li>
-					<li><a href="#" onclick="method(event)">Shop by categories</a></li>
-					<li><a href="#" onclick="method(event)" id="toftheseason">Tea of the season</a></li>
-				</ul>
-				<h3>Delivery &amp; Return</h3>
-				<ul>
-					<li><a onclick="method(event)" href="#">Delivery policies</a></li>
-					<li><a onclick="method(event)" href="#">Return policies</a></li>
-				</ul>	
-				<h3>Tea Society</h3>
-				<ul>
-					<li><a onclick="method(event)" href="#">Newsletter</a></li>
-					<li><a onclick="method(event)" href="#">Monthly activities</a></li>
-					<li><a onclick="method(event)" href="#">Past activities</a></li>
-				</ul>
+			<div class="cloud-right cloud-four fadeup">
+				<img src="images/cloud-right.png">
 			</div>
 		</div>
-		<div class="nav-bottom">
-			Chubby Cat Tea Co. ©2017 All rights reserved
+
+		<div class="tea-society">
+			<div class="row">
+				<div class="col-12 col-md-8">
+					<div class="banner-half">
+						<h1  class="fadein">Brewing tea is a pure joy.</h1>
+						<h3>Sign up to join our tea society; meet other tea lovers like you!</h3>
+					</div>
+					<div>
+						<article>
+							<a href="">Learn More</a>
+						</article>
+						<article>
+							<a href="">Shop Now</a>
+						</article>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="images/bamboo-tea.jpg">
+				</div>
+			</div>
 		</div>
+
+		<div class="footer">
+			<div class="row">
+				<div class="col-xs-0 col-sm-6 col-md-3" id="footer-logo">
+					<div class="social">
+						<h3>Follow us on social media</h3>
+						<div class="social-media">
+							<a href="#" onclick="method(event)"><img src="images/facebook.png"></a>
+							<a href="#" onclick="method(event)"><img src="images/instagram.png"></a>
+							<a href="#" onclick="method(event)"><img src="images/google.png"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3" id="firstcol">
+					<h3>About us</h3>
+					<p>Chubby Cat Tea Co., is a tea company selling classic tea and dedicating in the promotion of traditional brewing methods. We believe that tea is not just a kind of beverage but also a culture.</p>
+					
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3" id="midcol">
+					<h3>Address</h3>
+					<p>1385 Woodoffe Ave <br>+1 (613)-123-1234</p>
+					<h3>Opening hours</h3>
+					<p>Wednesday 07:00-21:30<br>Thursday 07:00-21:30<br>Friday 07:00-22:00<br>Saturday 08:00-21:30<br>Sunday 08:00-17:00</p>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3" id="lastcol">
+					<h3>Shop online</h3>
+					<ul>
+						<li><a href="#" onclick="method(event)">Pre-packed loose tea</a></li>
+						<li><a href="#" onclick="method(event)">Gift sets</a></li>
+						<li><a href="#" onclick="method(event)">Shop by categories</a></li>
+						<li><a href="#" onclick="method(event)" id="toftheseason">Tea of the season</a></li>
+					</ul>
+					<h3>Delivery &amp; Return</h3>
+					<ul>
+						<li><a onclick="method(event)" href="#">Delivery policies</a></li>
+						<li><a onclick="method(event)" href="#">Return policies</a></li>
+					</ul>	
+					<h3>Tea Society</h3>
+					<ul>
+						<li><a onclick="method(event)" href="#">Newsletter</a></li>
+						<li><a onclick="method(event)" href="#">Monthly activities</a></li>
+						<li><a onclick="method(event)" href="#">Past activities</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav-bottom">
+				Chubby Cat Tea Co. ©2017 All rights reserved
+			</div>
+		</div>
+
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
+	
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 	
 	<script type="text/javascript">
 		window.onbeforeunload = function () {
@@ -300,107 +369,99 @@
 		}
 	</script>
 
-	<script>
-		function myFunction(){	
-			$('nav ul').toggleClass('showing');
-			$('#menu-btn').toggleClass('rotate');
-			$('.menu-icon').toggleClass('rotate');
-		}
-	</script>
+		<script>
 
-	<script>
 		$(window).ready(function(){
-			$('#logologo').css('font-size','1.1em');
 			$(window).scroll(function(){
-				if ($(window).scrollTop() > 300) {
-					$('#logologo').css('font-size','1.3em');
-					$('.blackbar').css('background-color','rgba(255, 255, 255, 1)');
-					$('.blackbar').css('border-bottom','1.2px #dedede solid');
-					$('.fa-shopping-bag').css('font-size','1.5em');
+				if ($(window).scrollTop() > 100) {
+					$('.navtop').addClass('nav-move');
+				}else{
+					$('.navtop').removeClass('nav-move');
 				}
-				else {
-					$('#logologo').css('font-size','1.1em');
-					$('.blackbar').css('background-color','rgba(255, 255, 255, 0)');	
-					$('.blackbar').css('border-bottom','none');
-					$('.fa-shopping-bag').css('font-size','1.3em');
-				}
-			});
+			})
 		})
+
+		$(document).ready(function(){
+			$('#nav-icon3').click(function(){
+				$(this).toggleClass('open');
+				$('.navtop').toggleClass('showing');
+				$('body').toggleClass('noScroll');
+				
+			});
+
+		});
 	</script>
 
 	<script>
-		function buttonFunction(){
-			$('.button').css('border','2px #dedede solid');
-		};
-		function buttonNormal(){
-			$('.button').css('border','2px #fff solid')
-		};
-		function clickFunction(){
-			$('.button').css('background-color','#c9c236');
-		};
-		function upFunction(){
-			$('.button').css('background-color','#d4ce5e');	
-		}
+		window.addEventListener('click', function(e){   
+	  if (document.getElementById('intro').contains(e.target)){
+	    // Clicked in box
+	  } else{
+	    $('.collapse').collapse('hide');
+	  }
+	});
+
+		$('.collapse').on('shown.bs.collapse', function () {
+			$('#intro-box').css('height','180px')
+	})
+		$('.collapse').on('hidden.bs.collapse', function () {
+			$('#intro-box').css('height','initial')
+	})
 	</script>
 
 	<script>
-		function buttonFunct(){
-			$('.button-2').css('border','1px #999 solid');
-		};
-		function buttonNorm(){
-			$('.button-2').css('border','1px #fff solid')
-		};
-		function clickFunct(){
-			$('.button-2').css('background-color','#cb4e01');
-		};
-		function upFunct(){
-			$('.button-2').css('background-color','#af4401');	
-		}
+	 $(window).scroll(function (){
+	  $('.fadein').each(function(){
+	  var elemPos = $(this).offset().top;
+	  var scroll = $(window).scrollTop();
+	  var windowHeight = $(window).height();
+	  if (scroll > elemPos - windowHeight+200){
+	     gsap.to(this, {duration: 0.6, scaleY: 1, delay:0, opacity:1,  ease: "power1.out"});
+	  } else {
+	  	 gsap.to(this, {duration: 0.6, scaleY: 0, delay:0, opacity:0,  ease: "power1.out"});
+	  }
+	  });
+	});
+
+	 $(window).scroll(function (){
+	  $('.fadeup').each(function(){
+	  var elemPos = $(this).offset().top;
+	  var scroll = $(window).scrollTop();
+	  var windowHeight = $(window).height();
+	  if (scroll > elemPos - windowHeight+100){
+	     gsap.to(this, {duration: 0.6, translateY: 0, delay:0, opacity:1,  ease: "power1.out"});
+	  } else {
+	  	 gsap.to(this, {duration: 0.6, translateY: 100, delay:0, opacity:0,  ease: "power1.out"});
+	  }
+	  });
+	});
 	</script>
 
 	<script type="text/javascript">
-			$(document).ready(function(){
-			  $('.learn-tea').slick({
-			     dots: true,
-			     speed: 300,
-			     arrows: true,			  	
-			     centerMode: true,
-				 centerPadding: '20px',
-				 slidesToShow: 5,
-				 responsive: [
-				 {
-				    breakpoint: 992,
-				    settings: {
-				       centerMode: true,
-				       arrows: true,	
-				       centerPadding: '5px',
-				       slidesToShow: 3,
-				       slidesToScroll: 2
-				    }
-				   },
-				   {
-				    breakpoint: 768,
-				    settings: {
-				       centerMode: true,
-				       arrows: true,	
-				       centerPadding: '5px',
-				       slidesToShow: 2,
-				       slidesToScroll: 3
-				    }
-				   },
-				   {
-				    breakpoint: 576,
-				    settings: {
-				       centerMode: true,
-				       arrows: true,	
-				       centerPadding: '10px',
-				       slidesToShow: 1,
-				       slidesToScroll: 4
-				     }
-				   }
-				 ]
-			  });
-			});
+
+// parallax scrolling
+
+document.addEventListener("scroll", () => {
+  const 
+    top = window.pageYOffset,
+    one = document.querySelector(".cloud-one"),
+    two = document.querySelector(".cloud-two"),
+    three = document.querySelector(".cloud-three"),
+    four = document.querySelector(".cloud-four"),
+    five = document.querySelector(".masthead");
+    six = document.querySelector(".teaslider");
+    seven = document.querySelector(".tea-society");
+
+  one.style.bottom = -(top * 0.12) + "px";
+  two.style.bottom = -(top * 0.12) + "px";
+  three.style.bottom = -(top * 0.12) + "px";
+  four.style.bottom = -(top * 0.07) + "px";
+  five.style.bottom = -(top * 0.1) + "px";
+  six.style.bottom = -(top * 0.1) + "px";
+  seven.style.bottom = -(top * 0.1) + "px";
+  eight.style.bottom = -(top * 0.1) + "px";
+});
+
 	</script>
 
 </body>
